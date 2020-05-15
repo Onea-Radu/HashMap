@@ -126,7 +126,7 @@ inline vector<V> HashMap<K, V, F>::getValuesOf(K k)
 		{
 			return z.second;
 		}
-	throw "nu exista cheie";
+	throw "Nu exista cheie";
 }
 
 template<class K, class V, class F>
@@ -144,5 +144,5 @@ inline V HashMap<K, V, F>::operator[](K k)
 		{
 			return z.second[0];
 		}
-	throw "nu exista cheie";
+	throw "Nu exista cheie";
 }
