@@ -13,9 +13,11 @@ int main()
 	assert(hm.getNumberOfKeys() == 2);
 	assert(hm["exista"] == 10);
 	assert(hm.getValuesOf("exista") == vector<int>({ 10,50 }));
-
-
-
+	assert(hm.search("poate"));
+	assert(!hm.search("pot"));
+	hm.deleteKey("poate");
+	assert(hm.getNumberOfKeys() == 1);
+	assert(!hm.search("poate"));
 	cout << hm;
 
 
