@@ -18,6 +18,40 @@ int main()
 	hm.deleteKey("poate");
 	assert(hm.getNumberOfKeys() == 1);
 	assert(!hm.search("poate"));
+
+	try {
+
+		hm.getValuesOf("poate");
+		assert(false);
+	}
+	catch (...) {
+
+
+	}
+
+
+	try {
+
+		hm["poate"];
+		assert(false);
+	}
+	catch (...) {
+
+
+	}
+
+	try {
+
+		hm.deleteKey("poate");
+		assert(false);
+	}
+	catch (...) {
+
+
+	}
+
+
+
 	cout << hm;
 
 
