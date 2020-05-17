@@ -65,7 +65,7 @@ HashMap<K, V, F>::HashMap(HashMap const& hm)
 template<class K, class V, class F>
 inline HashMap<K, V, F> HashMap<K, V, F>::operator=(const HashMap& hm)
 {
-	if (*hm != this)
+	if (&hm != this)
 	{
 		this->bucketCapacity = hm.bucketCapacity;
 		this->siz = hm.siz;
